@@ -31,7 +31,7 @@
       'photo.title':'摄影记录','photo.hint':'点击任意照片查看大图','photo.cap1':'晨光 · 城市','photo.cap2':'海边','photo.cap3':'旧巷','photo.cap4':'夜景',
       'photo.filter.all':'全部','photo.filter.city':'城市','photo.filter.sea':'海边','photo.filter.street':'街头','photo.filter.fav':'最爱',
       'quotes.title':'人生格言',
-      'favorites.title':'喜欢的电影与文学','favorites.movies':'电影','favorites.m1':'《花样年华》','favorites.m2':'《完美的日子》','favorites.m3':'《大话西游》','favorites.books':'文学','favorites.b1':'陈年喜等 — 《大口呼吸春天》','favorites.b2':'王诗沐 — 《幕后产品》','favorites.b3':'S.A.阿列克谢耶维奇 — 《二手时间》'
+      'favorites.title':'喜欢的电影与文学','favorites.movies':'电影','favorites.m1':'《花样年华》','favorites.m2':'《完美的日子》','favorites.m3':'《大话西游》','favorites.books':'文学','favorites.b1':'陈年喜等 — 《大口呼吸春天》','favorites.b2':'王诗沐 — 《幕后产品》','favorites.b3':'S.A.阿列克谢耶维奇 — 《二手时间》','open':'打开'
     },
     en: {
       'nav.about':'About','nav.resume':'Resume','nav.photo':'Photos','nav.quotes':'Quotes','nav.favorites':'Favorites',
@@ -44,8 +44,8 @@
       'photo.title':'Photography','photo.hint':'Click any photo to view large','photo.cap1':'Morning light · City','photo.cap2':'Seaside','photo.cap3':'Old alley','photo.cap4':'Nightscape',
       'photo.filter.all':'All','photo.filter.city':'City','photo.filter.sea':'Sea','photo.filter.street':'Street','photo.filter.fav':'Faves',
       'quotes.title':'Life Quotes',
-      'favorites.title':'Favorite Films & Books','favorites.movies':'Films','favorites.m1':'In the Mood for Love','favorites.m2':'Perfect Days','favorites.m3':'A Chinese Odyssey','favorites.books':'Books','favorites.b1':'Chen Nianxi et al. — Breathe in Spring','favorites.b2':'Wang Shimu — Behind the Product','favorites.b3':'S. A. Alexievich — Secondhand Time'
-    }
+      'favorites.title':'Favorite Films & Books','favorites.movies':'Films','favorites.m1':'In the Mood for Love','favorites.m2':'Perfect Days','favorites.m3':'A Chinese Odyssey','favorites.books':'Books','favorites.b1':'Chen Nianxi et al. — Breathe in Spring','favorites.b2':'Wang Shimu — Behind the Product','favorites.b3':'S. A. Alexievich — Secondhand Time','open':'Open'
+
   };
 
   const quoteSets = {
@@ -164,8 +164,8 @@
 
   // Photo data from web007/dylans_photos
   const photos = [
-    {src:'/morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
-    {src:'/coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
+    {src:'/web007/morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
+    {src:'/web007/coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
     {src:'/web007/flower.jpg',cap:{zh:'花',en:'Flower'},cat:'fav'},
     {src:'/web007/leaves.jpg',cap:{zh:'落叶',en:'Leaves'},cat:'street'},
     {src:'/web007/love.jpg',cap:{zh:'最爱',en:'Favorite'},cat:'fav'},
