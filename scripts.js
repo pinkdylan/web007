@@ -23,38 +23,40 @@
     zh: {
       'nav.about':'关于','nav.resume':'简历','nav.photo':'摄影','nav.quotes':'格言','nav.favorites':'喜欢',
       'hero.title':'你好，我是 <span class="accent">pinkdylan</span>',
-      'hero.lead':'爱拍照的学生 / 开发者 / 喜欢干净简洁的界面设计。',
+      'hero.lead':'热爱摄影的学生 / 开发者 / 喜欢简约质朴的生活。',
       'hero.ctaResume':'查看简历','hero.ctaPhotos':'摄影集',
       'about.title':'关于我',
-      'about.body':'我叫 Dylan（网名 pinkdylan），目前学习计算机相关课程，兴趣包括摄影、产品设计与前端开发。喜欢简单、明快、有层次的界面风格，偏好苹果风格的留白与模糊卡片。',
-      'resume.title':'简历','resume.intro':'在这里放置你的简历简介，以及下载链接。','resume.edu':'教育：××大学 · 专业','resume.skills':'技能：HTML / CSS / JavaScript / Python / 计算机基础','resume.projects':'项目：宠相随、五子棋网页、图像增强脚本等','resume.download':'下载完整简历 (resume.pdf)','resume.contact':'联系方式','resume.email':'邮箱：','resume.github':'GitHub：',
+      'about.body':'我叫 Dylan（网名 pinkdylan），计算机科学与技术专业本科生，热爱摄影、攀登、绘画。希望从事产品设计与开发。我始终相信，所有关于美好的相遇，都并非偶然。它们源于我们对生活的无限热爱，源于心中那一片永不荒芜的诗意田野。<br><br>我们把日子过成诗，不是因为拥有了多少，而是因为看见了更多。看见清晨第一缕阳光穿透薄雾的金色，听见落叶在秋风中轻声的告别，闻见街角咖啡店飘出的温暖香气，感受冬日里一杯热茶带来的熨帖。',
+      'resume.title':'简历','resume.intro':'在这里放置你的简历简介，以及下载链接。','resume.edu':'教育：浙江中医药大学大学 · 27届计算机科学与技术专业','resume.skills':'技能：Java后端/Oracle数据库/产品设计/摄影/绘画','resume.projects':'项目：宠相随、坦克大战游戏网页设计、图像增强脚本等','resume.download':'下载完整简历 (dylans_resume.pdf)','resume.contact':'联系方式','resume.email':'邮箱：','resume.github':'GitHub：',
       'photo.title':'摄影记录','photo.hint':'点击任意照片查看大图','photo.cap1':'晨光 · 城市','photo.cap2':'海边','photo.cap3':'旧巷','photo.cap4':'夜景',
+      'photo.filter.all':'全部','photo.filter.city':'城市','photo.filter.sea':'海边','photo.filter.street':'街头','photo.filter.fav':'最爱',
       'quotes.title':'人生格言',
-      'favorites.title':'喜欢的电影与文学','favorites.movies':'电影','favorites.m1':'《海上钢琴师》','favorites.m2':'《千与千寻》','favorites.m3':'《肖申克的救赎》','favorites.books':'文学','favorites.b1':'村上春树 — 《挪威的森林》','favorites.b2':'东野圭吾 — 《解忧杂货店》','favorites.b3':'川端康成 — 《雪国》'
+      'favorites.title':'喜欢的电影与文学','favorites.movies':'电影','favorites.m1':'《花样年华》','favorites.m2':'《完美的日子》','favorites.m3':'《大话西游》','favorites.books':'文学','favorites.b1':'陈年喜等 — 《大口呼吸春天》','favorites.b2':'王诗沐 — 《幕后产品》','favorites.b3':'S.A.阿列克谢耶维奇 — 《二手时间》'
     },
     en: {
       'nav.about':'About','nav.resume':'Resume','nav.photo':'Photos','nav.quotes':'Quotes','nav.favorites':'Favorites',
       'hero.title':'Hi, I am <span class="accent">pinkdylan</span>',
-      'hero.lead':'A student photographer / developer who loves clean UI.',
+      'hero.lead':'A student photographer / developer who enjoys a simple, grounded life.',
       'hero.ctaResume':'View Resume','hero.ctaPhotos':'Gallery',
       'about.title':'About Me',
-      'about.body':'I am Dylan (aka pinkdylan), studying computer science. I enjoy photography, product thinking, and front-end development. I prefer Apple-style design: simplicity, clarity, and tasteful blur.',
-      'resume.title':'Resume','resume.intro':'Place a short resume summary here with the download link.','resume.edu':'Education: University · Major','resume.skills':'Skills: HTML / CSS / JavaScript / Python / CS fundamentals','resume.projects':'Projects: Pet Companion, Gomoku site, Image enhancement scripts','resume.download':'Download full resume (resume.pdf)','resume.contact':'Contact','resume.email':'Email:','resume.github':'GitHub:',
+      'about.body':'I am Dylan (aka pinkdylan), a CS undergrad who loves photography, hiking, and drawing. I hope to work in product design and development. I believe beautiful encounters come from our love of life and a poetic heart.<br><br>We try to live poetically not because we have more, but because we see more—the first morning light through mist, the whisper of falling leaves, the warm aroma of coffee at the corner, and the comfort of a hot tea in winter.',
+      'resume.title':'Resume','resume.intro':'A brief resume summary with the download link.','resume.edu':'Education: Zhejiang Chinese Medical University · CS Class of 2027','resume.skills':'Skills: Java backend / Oracle DB / Product design / Photography / Drawing','resume.projects':'Projects: Pet Companion, Tank Battle web game, Image enhancement scripts','resume.download':'Download full resume (dylans_resume.pdf)','resume.contact':'Contact','resume.email':'Email:','resume.github':'GitHub:',
       'photo.title':'Photography','photo.hint':'Click any photo to view large','photo.cap1':'Morning light · City','photo.cap2':'Seaside','photo.cap3':'Old alley','photo.cap4':'Nightscape',
+      'photo.filter.all':'All','photo.filter.city':'City','photo.filter.sea':'Sea','photo.filter.street':'Street','photo.filter.fav':'Faves',
       'quotes.title':'Life Quotes',
-      'favorites.title':'Favorite Films & Books','favorites.movies':'Films','favorites.m1':'The Legend of 1900','favorites.m2':'Spirited Away','favorites.m3':'The Shawshank Redemption','favorites.books':'Books','favorites.b1':'Haruki Murakami — Norwegian Wood','favorites.b2':'Keigo Higashino — Miracles of the Namiya General Store','favorites.b3':'Yasunari Kawabata — Snow Country'
+      'favorites.title':'Favorite Films & Books','favorites.movies':'Films','favorites.m1':'In the Mood for Love','favorites.m2':'Perfect Days','favorites.m3':'A Chinese Odyssey','favorites.books':'Books','favorites.b1':'Chen Nianxi et al. — Breathe in Spring','favorites.b2':'Wang Shimu — Behind the Product','favorites.b3':'S. A. Alexievich — Secondhand Time'
     }
   };
 
   const quoteSets = {
     zh: [
       '“一路向前，带着好奇心与温柔。”',
-      '“保持专注，简洁是终极的复杂。”',
+      '“面朝大海，春暖花开。”',
       '“用心感受光影，也热爱代码。”'
     ],
     en: [
       '“Keep moving with curiosity and kindness.”',
-      '“Focus matters. Simplicity is the ultimate sophistication.”',
+      '“Facing the Sea, with Spring Blossoms.”',
       '“Feel the light, and love the code.”'
     ]
   };
@@ -164,15 +166,15 @@
     {src:'https://via.placeholder.com/1200x800?text=City+1',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
     {src:'https://via.placeholder.com/1200x800?text=Sea+1',cap:{zh:'海边',en:'Seaside'},cat:'sea'},
     {src:'https://via.placeholder.com/1200x800?text=Street+1',cap:{zh:'旧巷',en:'Old Alley'},cat:'street'},
-    {src:'https://via.placeholder.com/1200x800?text=Night+1',cap:{zh:'夜景',en:'Nightscape'},cat:'night'},
+    {src:'https://via.placeholder.com/1200x800?text=Night+1',cap:{zh:'夜景',en:'Nightscape'},cat:'fav'},
     {src:'https://via.placeholder.com/1200x800?text=City+2',cap:{zh:'桥影',en:'Bridge Shadows'},cat:'city'},
     {src:'https://via.placeholder.com/1200x800?text=Sea+2',cap:{zh:'浪',en:'Waves'},cat:'sea'},
     {src:'https://via.placeholder.com/1200x800?text=Street+2',cap:{zh:'行人',en:'Pedestrian'},cat:'street'},
-    {src:'https://via.placeholder.com/1200x800?text=Night+2',cap:{zh:'霓虹',en:'Neon'},cat:'night'},
+    {src:'https://via.placeholder.com/1200x800?text=Night+2',cap:{zh:'霓虹',en:'Neon'},cat:'fav'},
     {src:'https://via.placeholder.com/1200x800?text=City+3',cap:{zh:'屋顶',en:'Rooftop'},cat:'city'},
     {src:'https://via.placeholder.com/1200x800?text=Sea+3',cap:{zh:'礁岩',en:'Reef'},cat:'sea'},
     {src:'https://via.placeholder.com/1200x800?text=Street+3',cap:{zh:'转角',en:'Corner'},cat:'street'},
-    {src:'https://via.placeholder.com/1200x800?text=Night+3',cap:{zh:'光轨',en:'Light Trails'},cat:'night'}
+    {src:'https://via.placeholder.com/1200x800?text=Night+3',cap:{zh:'光轨',en:'Light Trails'},cat:'fav'}
   ];
 
   const pageSize = 8;
@@ -222,6 +224,4 @@
   // Initial grid render
   renderGrid();
 })();
-
-
 
