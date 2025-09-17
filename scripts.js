@@ -162,18 +162,23 @@
   // initial language apply
   applyI18n(savedLang);
 
-  // Photo data from web007/dylans_photos
+  // Derive image base from this script's directory (robust on GitHub Pages)
+  const currentScript = document.currentScript || document.querySelector('script[src*="scripts.js"]');
+  const scriptBase = currentScript ? new URL(currentScript.getAttribute('src'), location.href) : new URL('scripts.js', location.href);
+  const imgBase = scriptBase.pathname.replace(/[^/]+$/, ''); // e.g. /web007/
+
+  // Photo data (files next to scripts.css under imgBase)
   const photos = [
-    {src:'/web007/morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
-    {src:'/web007/coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
-    {src:'/web007/flower.jpg',cap:{zh:'花',en:'Flower'},cat:'fav'},
-    {src:'/web007/leaves.jpg',cap:{zh:'落叶',en:'Leaves'},cat:'street'},
-    {src:'/web007/love.jpg',cap:{zh:'最爱',en:'Favorite'},cat:'fav'},
-    {src:'/web007/tea.jpg',cap:{zh:'热茶',en:'Tea'},cat:'street'},
-    {src:'/web007/tower.jpg',cap:{zh:'塔影',en:'Tower'},cat:'city'},
-    {src:'/web007/tree.jpg',cap:{zh:'树',en:'Tree'},cat:'street'},
-    {src:'/web007/zoo.jpg',cap:{zh:'动物园',en:'Zoo'},cat:'fav'},
-    {src:'/web007/bird.jpg',cap:{zh:'鸟',en:'Bird'},cat:'fav'}
+    {src: imgBase + 'morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
+    {src: imgBase + 'coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
+    {src: imgBase + 'flower.jpg',cap:{zh:'花',en:'Flower'},cat:'fav'},
+    {src: imgBase + 'leaves.jpg',cap:{zh:'落叶',en:'Leaves'},cat:'street'},
+    {src: imgBase + 'love.jpg',cap:{zh:'最爱',en:'Favorite'},cat:'fav'},
+    {src: imgBase + 'tea.jpg',cap:{zh:'热茶',en:'Tea'},cat:'street'},
+    {src: imgBase + 'tower.jpg',cap:{zh:'塔影',en:'Tower'},cat:'city'},
+    {src: imgBase + 'tree.jpg',cap:{zh:'树',en:'Tree'},cat:'street'},
+    {src: imgBase + 'zoo.jpg',cap:{zh:'动物园',en:'Zoo'},cat:'fav'},
+    {src: imgBase + 'bird.jpg',cap:{zh:'鸟',en:'Bird'},cat:'fav'}
   ];
 
   const pageSize = 8;
@@ -223,4 +228,3 @@
   // Initial grid render
   renderGrid();
 })();
-
