@@ -164,8 +164,8 @@
 
   // Photo data from web007/dylans_photos
   const photos = [
-    {src:'morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
-    {src:'/web007/coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
+    {src:'/morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
+    {src:'/coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
     {src:'/web007/flower.jpg',cap:{zh:'花',en:'Flower'},cat:'fav'},
     {src:'/web007/leaves.jpg',cap:{zh:'落叶',en:'Leaves'},cat:'street'},
     {src:'/web007/love.jpg',cap:{zh:'最爱',en:'Favorite'},cat:'fav'},
