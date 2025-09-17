@@ -164,16 +164,16 @@
 
   // Photo data from web007/dylans_photos
   const photos = [
-    {src:'web007/morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
-    {src:'web007/coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
-    {src:'web007/flower.jpg',cap:{zh:'花',en:'Flower'},cat:'fav'},
-    {src:'web007/leaves.jpg',cap:{zh:'落叶',en:'Leaves'},cat:'street'},
-    {src:'web007/love.jpg',cap:{zh:'最爱',en:'Favorite'},cat:'fav'},
-    {src:'web007/tea.jpg',cap:{zh:'热茶',en:'Tea'},cat:'street'},
-    {src:'web007/tower.jpg',cap:{zh:'塔影',en:'Tower'},cat:'city'},
-    {src:'web007/tree.jpg',cap:{zh:'树',en:'Tree'},cat:'street'},
-    {src:'web007/zoo.jpg',cap:{zh:'动物园',en:'Zoo'},cat:'fav'},
-    {src:'web00/bird.jpg',cap:{zh:'鸟',en:'Bird'},cat:'fav'}
+    {src:'/web007/morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
+    {src:'/web007/coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
+    {src:'/web007/flower.jpg',cap:{zh:'花',en:'Flower'},cat:'fav'},
+    {src:'/web007/leaves.jpg',cap:{zh:'落叶',en:'Leaves'},cat:'street'},
+    {src:'/web007/love.jpg',cap:{zh:'最爱',en:'Favorite'},cat:'fav'},
+    {src:'/web007/tea.jpg',cap:{zh:'热茶',en:'Tea'},cat:'street'},
+    {src:'/web007/tower.jpg',cap:{zh:'塔影',en:'Tower'},cat:'city'},
+    {src:'/web007/tree.jpg',cap:{zh:'树',en:'Tree'},cat:'street'},
+    {src:'/web007/zoo.jpg',cap:{zh:'动物园',en:'Zoo'},cat:'fav'},
+    {src:'/web00/bird.jpg',cap:{zh:'鸟',en:'Bird'},cat:'fav'}
   ];
 
   const pageSize = 8;
