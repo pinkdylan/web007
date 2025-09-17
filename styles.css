@@ -35,6 +35,7 @@ body{
 .brand{font-weight:700;font-size:1.1rem}
 .nav{margin-left:auto;display:flex;gap:12px}
 .nav a{color:var(--muted);text-decoration:none;padding:8px;border-radius:8px}
+.nav a.active{color:var(--text);background:var(--glass)}
 .nav a:hover{color:var(--text);background:var(--glass)}
 .icon-btn{background:transparent;border:0;padding:8px;border-radius:8px;cursor:pointer}
 
@@ -54,6 +55,10 @@ body{
 .photo-item{border-radius:10px;overflow:hidden;background:#eee}
 .photo-item img{width:100%;height:160px;object-fit:cover;display:block}
 .photo-item figcaption{padding:8px;font-size:13px;color:var(--muted)}
+.photo-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px;margin-bottom:8px}
+.chip{border:1px solid rgba(10,10,10,0.06);background:transparent;color:var(--text);border-radius:999px;padding:6px 10px;cursor:pointer}
+.chip.active{background:var(--glass)}
+.pager{display:flex;align-items:center;gap:8px}
 .quote{font-size:18px;margin:8px 0;padding-left:12px;border-left:3px solid var(--accent);color:var(--text)}
 .favorites-list{display:flex;gap:24px}
 .favorites-list ul{margin:6px 0;padding-left:18px}
@@ -71,6 +76,7 @@ body{
   .grid-2{grid-template-columns:1fr}
   .hero-inner{flex-direction:row}
   .avatar{width:72px;height:72px;border-radius:12px}
+  .photo-controls{flex-direction:column;align-items:flex-start}
 }
 
 /* small tweaks */
