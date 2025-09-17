@@ -102,6 +102,7 @@
   const filterBar = document.querySelector('.filters');
 
   photoGrid.addEventListener('click', (e)=>{
+    e.preventDefault();
     const fig = e.target.closest('figure');
     if(!fig) return;
     const img = fig.querySelector('img');
@@ -161,20 +162,18 @@
   // initial language apply
   applyI18n(savedLang);
 
-  // Photo data (demo). Replace src with your images.
+  // Photo data from web007/dylans_photos
   const photos = [
-    {src:'https://via.placeholder.com/1200x800?text=City+1',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
-    {src:'https://via.placeholder.com/1200x800?text=Sea+1',cap:{zh:'海边',en:'Seaside'},cat:'sea'},
-    {src:'https://via.placeholder.com/1200x800?text=Street+1',cap:{zh:'旧巷',en:'Old Alley'},cat:'street'},
-    {src:'https://via.placeholder.com/1200x800?text=Night+1',cap:{zh:'夜景',en:'Nightscape'},cat:'fav'},
-    {src:'https://via.placeholder.com/1200x800?text=City+2',cap:{zh:'桥影',en:'Bridge Shadows'},cat:'city'},
-    {src:'https://via.placeholder.com/1200x800?text=Sea+2',cap:{zh:'浪',en:'Waves'},cat:'sea'},
-    {src:'https://via.placeholder.com/1200x800?text=Street+2',cap:{zh:'行人',en:'Pedestrian'},cat:'street'},
-    {src:'https://via.placeholder.com/1200x800?text=Night+2',cap:{zh:'霓虹',en:'Neon'},cat:'fav'},
-    {src:'https://via.placeholder.com/1200x800?text=City+3',cap:{zh:'屋顶',en:'Rooftop'},cat:'city'},
-    {src:'https://via.placeholder.com/1200x800?text=Sea+3',cap:{zh:'礁岩',en:'Reef'},cat:'sea'},
-    {src:'https://via.placeholder.com/1200x800?text=Street+3',cap:{zh:'转角',en:'Corner'},cat:'street'},
-    {src:'https://via.placeholder.com/1200x800?text=Night+3',cap:{zh:'光轨',en:'Light Trails'},cat:'fav'}
+    {src:'web007/morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
+    {src:'web007/coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
+    {src:'web007/flower.jpg',cap:{zh:'花',en:'Flower'},cat:'fav'},
+    {src:'web007/leaves.jpg',cap:{zh:'落叶',en:'Leaves'},cat:'street'},
+    {src:'web007/love.jpg',cap:{zh:'最爱',en:'Favorite'},cat:'fav'},
+    {src:'web007/tea.jpg',cap:{zh:'热茶',en:'Tea'},cat:'street'},
+    {src:'web007/tower.jpg',cap:{zh:'塔影',en:'Tower'},cat:'city'},
+    {src:'web007/tree.jpg',cap:{zh:'树',en:'Tree'},cat:'street'},
+    {src:'web007/zoo.jpg',cap:{zh:'动物园',en:'Zoo'},cat:'fav'},
+    {src:'web00/bird.jpg',cap:{zh:'鸟',en:'Bird'},cat:'fav'}
   ];
 
   const pageSize = 8;
@@ -192,7 +191,7 @@
     const start = (currentPage-1)*pageSize;
     const pageItems = data.slice(start, start+pageSize);
     photoGrid.innerHTML = pageItems.map(p=>
-      `<figure class="photo-item"><img src="${p.src}" alt="photo"><figcaption>${(p.cap[lang]||p.cap.zh)}</figcaption></figure>`
+      `<figure class="photo-item"><a href="${p.src}" target="_blank" rel="noopener"><img src="${p.src}" alt="photo"></a><figcaption>${(p.cap[lang]||p.cap.zh)}</figcaption></figure>`
     ).join('');
     pageInfo.textContent = `${currentPage} / ${total}`;
     prevPageBtn.disabled = currentPage<=1;
