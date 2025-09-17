@@ -46,6 +46,7 @@ body{
 .lead{color:var(--muted);margin-top:8px}
 .btn{display:inline-block;padding:10px 14px;border-radius:12px;text-decoration:none;background:var(--accent);color:white;font-weight:600;margin-right:8px}
 .btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(10,10,10,0.04)}
+.btn.small{padding:6px 10px;font-size:12px;border-radius:999px;margin-right:0}
 
 .card-section{padding:24px 0}
 .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 6px 24px rgba(16,24,40,0.06);backdrop-filter: blur(8px)}
@@ -62,6 +63,8 @@ body{
 .quote{font-size:18px;margin:8px 0;padding-left:12px;border-left:3px solid var(--accent);color:var(--text)}
 .favorites-list{display:flex;gap:24px}
 .favorites-list ul{margin:6px 0;padding-left:18px}
+.favorites-list li{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.favorites-list li .title{flex:1;min-width:0}
 .site-footer{padding:28px 0;color:var(--muted)}
 
 /* Lightbox */
