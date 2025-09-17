@@ -173,7 +173,7 @@
     {src:'/web007/tower.jpg',cap:{zh:'塔影',en:'Tower'},cat:'city'},
     {src:'/web007/tree.jpg',cap:{zh:'树',en:'Tree'},cat:'street'},
     {src:'/web007/zoo.jpg',cap:{zh:'动物园',en:'Zoo'},cat:'fav'},
-    {src:'/web00/bird.jpg',cap:{zh:'鸟',en:'Bird'},cat:'fav'}
+    {src:'/web007/bird.jpg',cap:{zh:'鸟',en:'Bird'},cat:'fav'}
   ];
 
   const pageSize = 8;
