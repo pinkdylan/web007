@@ -21,43 +21,133 @@
   // i18n
   const dict = {
     zh: {
-      'nav.about':'关于','nav.resume':'简历','nav.photo':'摄影','nav.quotes':'格言','nav.favorites':'喜欢',
+      'nav.about':'关于','nav.resume':'简历','nav.project':'项目','nav.photo':'作品集','nav.quotes':'格言','nav.favorites':'喜欢',
       'hero.title':'你好，我是 <span class="accent">pinkdylan</span>',
-      'hero.lead':'热爱摄影的学生 / 开发者 / 喜欢简约质朴的生活。',
-      'hero.ctaResume':'查看简历','hero.ctaPhotos':'摄影集',
+      'hero.lead':'热爱摄影的学生 / 全栈开发者 / 也在做产品设计与 AI 安全测试。',
+      'hero.ctaResume':'查看简历','hero.ctaProject':'查看项目','hero.ctaPhotos':'个人作品集',
       'about.title':'关于我',
-      'about.body':'我叫 Dylan（网名 pinkdylan），计算机科学与技术专业本科生，热爱摄影、攀登、绘画。希望从事产品设计与开发。我始终相信，所有关于美好的相遇，都并非偶然。它们源于我们对生活的无限热爱，源于心中那一片永不荒芜的诗意田野。<br><br>我们把日子过成诗，不是因为拥有了多少，而是因为看见了更多。看见清晨第一缕阳光穿透薄雾的金色，听见落叶在秋风中轻声的告别，闻见街角咖啡店飘出的温暖香气，感受冬日里一杯热茶带来的熨帖。',
-      'resume.title':'简历','resume.intro':'下面是我的简历简介和下载链接呦～。','resume.edu':'教育：浙江中医药大学大学 · 27届计算机科学与技术专业','resume.skills':'技能：Java后端/Oracle数据库/产品设计/摄影/绘画','resume.projects':'项目：宠相随、坦克大战游戏网页设计、图像增强脚本等','resume.download':'下载完整简历 (dylans_resume.pdf)','resume.contact':'联系方式','resume.email':'邮箱：','resume.github':'GitHub：',
-      'photo.title':'摄影记录','photo.hint':'点击任意照片查看大图','photo.cap1':'晨光 · 城市','photo.cap2':'海边','photo.cap3':'旧巷','photo.cap4':'夜景',
-      'photo.filter.all':'全部','photo.filter.city':'城市','photo.filter.sea':'海边','photo.filter.street':'街头','photo.filter.fav':'最爱',
+      'about.body':'我叫 Dylan（网名 pinkdylan）。摄影对我来说是一种“观察世界”的方式：构图、色彩、比例与耐心，让我在现场更安静、更专注。因为喜欢老单反的机械质感，我也更在意“手感”和“反馈”，这份偏好从相机延伸到代码与产品里。<br><br>我是“观察者”，也是“造物主”：把想法变成可触摸的体验。学习上我会对 AI 与工程保持敏感，也会在产品视角里追问：用户到底需要什么、怎样的交互更能被信任与使用。<br><br>生活里我喜欢夜晚操场的奔跑、喜欢寝室拉上床帘的放松、喜欢和喜欢的人一起旅行——把日子过成诗，不是因为拥有了多少，而是因为看见了更多。',
+
+      'resume.title':'简历',
+      'resume.intro':'把我能做什么、我在学什么、我正在把它做成什么样，整理在这里。',
+      'resume.edu':'教育：浙江中医药大学 · 计算机科学与技术（2023.09-2027.06）',
+      'resume.role':'经历：校团委摄影部副部长（组织部门活动与管理）',
+      'resume.skills':'技能：产品设计（PRD 到技术选型，Figma/Google Stitch）/ AI 安全测试 / 前端（Next.js + Cursor）/ 后端（Python + FastAPI）',
+      'resume.projects':'项目实习：<span class="muted">宠相随 PetLink</span> / 图像去雾算法（深度学习+物理先验）/ LLM 安全测试与题库构建',
+      'resume.awards':'参赛与荣誉：浙江省国际大学生创新大赛银奖、电子商务竞赛省银奖、证券投资大赛省赛银奖',
+      'resume.download':'下载完整简历 (dylans_resume.pdf)',
+      'resume.contact':'联系方式',
+      'resume.email':'邮箱：',
+      'resume.phone':'电话：',
+      'resume.github':'GitHub：',
+
+      'photo.title':'个人作品集',
+      'photo.hint':'点击任意照片查看大图',
+      'photo.filter.all':'全部',
+      'photo.filter.city':'城市',
+      'photo.filter.street':'街头',
+      'photo.filter.nature':'自然',
+      'photo.filter.animal':'动物',
+
       'quotes.title':'人生格言',
-      'favorites.title':'喜欢的电影与文学','favorites.movies':'电影','favorites.m1':'《花样年华》','favorites.m2':'《完美的日子》','favorites.m3':'《大话西游》','favorites.books':'文学','favorites.b1':'陈年喜等 — 《大口呼吸春天》','favorites.b2':'王诗沐 — 《幕后产品》','favorites.b3':'S.A.阿列克谢耶维奇 — 《二手时间》','open':'打开'
+
+      'project.title':'项目：宠相随 PetLink',
+      'project.subtitle':'把“养宠的难”变成可记录、可分析、可决策的日常工具。',
+      'project.what':'解决哪些痛点',
+      'project.sol':'我们怎么做',
+      'project.current':'目前进展',
+      'project.prd':'查看 PRD',
+      'project.mvp':'查看 MVP 文档',
+      'project.pain1':'病史记不清：就医时回顾困难、证据不足。',
+      'project.pain2':'症状难复现：口述信息容易丢失、难以对比趋势。',
+      'project.pain3':'AI 怎么用才靠谱：只问一次容易误判，需要结合档案。',
+      'project.s1':'一键多模态记录：文字/语音 + 图片/短视频落到结构化时间轴与标签。',
+      'project.s2':'AI 长记忆问诊：基于近 N 天健康档案摘要进行语境反哺与红线警示。',
+      'project.s3':'BCS 体况量化：通过视觉与拍摄流程让体况评估更稳定。',
+      'project.currentText':'BCS 视觉体重检测相关能力正在训练中，我们优先把核心交互链路跑通，并持续用数据与迭代提升体验。',
+      'project.tech':'关键技术栈：Next.js / Prisma / OpenAI-兼容接口（AI API）/ 结构化数据闭环。',
+
+      'favorites.title':'喜欢的电影与文学',
+      'favorites.movies':'电影',
+      'favorites.m1':'《花样年华》',
+      'favorites.m2':'《完美的日子》',
+      'favorites.m3':'《大话西游》',
+      'favorites.books':'文学',
+      'favorites.b1':'陈年喜等 — 《大口呼吸春天》',
+      'favorites.b2':'王诗沐 — 《幕后产品》',
+      'favorites.b3':'S.A.阿列克谢耶维奇 — 《二手时间》',
+      'open':'打开'
     },
     en: {
-      'nav.about':'About','nav.resume':'Resume','nav.photo':'Photos','nav.quotes':'Quotes','nav.favorites':'Favorites',
+      'nav.about':'About','nav.resume':'Resume','nav.project':'Project','nav.photo':'Portfolio','nav.quotes':'Quotes','nav.favorites':'Favorites',
       'hero.title':'Hi, I am <span class="accent">pinkdylan</span>',
-      'hero.lead':'A student photographer / developer who enjoys a simple, grounded life.',
-      'hero.ctaResume':'View Resume','hero.ctaPhotos':'Gallery',
+      'hero.lead':'A student photographer / full-stack developer / product designer and AI security tester.',
+      'hero.ctaResume':'View Resume','hero.ctaProject':'View Project','hero.ctaPhotos':'Photo Portfolio',
       'about.title':'About Me',
-      'about.body':'I am Dylan (aka pinkdylan), a CS undergrad who loves photography, hiking, and drawing. I hope to work in product design and development. I believe beautiful encounters come from our love of life and a poetic heart.<br><br>We try to live poetically not because we have more, but because we see more—the first morning light through mist, the whisper of falling leaves, the warm aroma of coffee at the corner, and the comfort of a hot tea in winter.',
-      'resume.title':'Resume','resume.intro':'Below is my resume and download link～','resume.edu':'Education: Zhejiang Chinese Medical University · CS Class of 2027','resume.skills':'Skills: Java backend / Oracle DB / Product design / Photography / Drawing','resume.projects':'Projects: Pet Companion, Tank Battle web game, Image enhancement scripts','resume.download':'Download full resume (dylans_resume.pdf)','resume.contact':'Contact','resume.email':'Email:','resume.github':'GitHub:',
-      'photo.title':'Photography','photo.hint':'Click any photo to view large','photo.cap1':'Morning light · City','photo.cap2':'Seaside','photo.cap3':'Old alley','photo.cap4':'Nightscape',
-      'photo.filter.all':'All','photo.filter.city':'City','photo.filter.sea':'Sea','photo.filter.street':'Street','photo.filter.fav':'Faves',
+      'about.body':'I am Dylan (aka pinkdylan). Photography is how I observe the world—composition, color, proportion, and patience keep me calm and focused on-site. I love the mechanical feel of old cameras, so I care about “hand feel” and feedback; it shows up in my code and product thinking too.<br><br>I am both an “observer” and a “maker”: turning ideas into tangible experiences. I stay curious about AI and engineering, and I keep asking from a product lens—what do users really need, and what kind of interaction builds trust?<br><br>In life I enjoy running on night tracks, pulling the curtains for quiet downtime, and traveling with someone I love—turning days into poetry, not because we have more, but because we see more.',
+
+      'resume.title':'Resume',
+      'resume.intro':'What I can do, what I am learning, and what I am shaping right now.',
+      'resume.edu':'Education: Zhejiang Chinese Medical University · CS (2023.09-2027.06)',
+      'resume.role':'Experience: Deputy Head, Photography Dept (Student Union)',
+      'resume.skills':'Skills: Product design (from PRD to tech planning, Figma/Google Stitch) / AI security testing / Frontend (Next.js + Cursor) / Backend (Python + FastAPI)',
+      'resume.projects':'Internship projects: <span class="muted">PetLink</span> / Image dehazing (deep learning + physical priors) / LLM red-teaming and bilingual test set building',
+      'resume.awards':'Awards: Silver at Zhejiang International Innovation Competition, Silver at E-commerce competition, Silver at Securities Investment competition',
+      'resume.download':'Download full resume (dylans_resume.pdf)',
+      'resume.contact':'Contact',
+      'resume.email':'Email:',
+      'resume.phone':'Phone:',
+      'resume.github':'GitHub:',
+
+      'photo.title':'Photo Portfolio',
+      'photo.hint':'Click any photo to view large',
+      'photo.filter.all':'All',
+      'photo.filter.city':'City',
+      'photo.filter.street':'Street',
+      'photo.filter.nature':'Nature',
+      'photo.filter.animal':'Animals',
+
       'quotes.title':'Life Quotes',
-      'favorites.title':'Favorite Films & Books','favorites.movies':'Films','favorites.m1':'In the Mood for Love','favorites.m2':'Perfect Days','favorites.m3':'A Chinese Odyssey','favorites.books':'Books','favorites.b1':'Chen Nianxi et al. — Breathe in Spring','favorites.b2':'Wang Shimu — Behind the Product','favorites.b3':'S. A. Alexievich — Secondhand Time','open':'Open'
+
+      'project.title':'Project: PetLink',
+      'project.subtitle':'Turning “the difficulty of pet care” into a recordable, analyzable, decision-friendly daily tool.',
+      'project.what':'What pain points we solve',
+      'project.sol':'How we do it',
+      'project.current':'Current progress',
+      'project.prd':'View PRD',
+      'project.mvp':'View MVP Docs',
+      'project.pain1':'Unclear medical history: hard to review during vet visits, weak evidence.',
+      'project.pain2':'Hard to reproduce symptoms: oral info gets lost, trends are difficult to compare.',
+      'project.pain3':'AI that actually works: one-shot questions can be misleading; we need archive context.',
+      'project.s1':'One-tap multimodal logging: text/voice + images/videos into structured timeline and tags.',
+      'project.s2':'AI long-memory clinic: reasoning with summaries from the last N days + red-line warnings.',
+      'project.s3':'BCS body-condition quantification: a more stable visual + capture flow for scoring.',
+      'project.currentText':'BCS-related visual body/weight detection is under training. We focus on making the core interaction loop work first, then improve through data and iteration.',
+      'project.tech':'Tech stack highlights: Next.js / Prisma / OpenAI-compatible AI API / structured data loop.',
+
+      'favorites.title':'Favorite Films & Books',
+      'favorites.movies':'Films',
+      'favorites.m1':'In the Mood for Love',
+      'favorites.m2':'Perfect Days',
+      'favorites.m3':'A Chinese Odyssey',
+      'favorites.books':'Books',
+      'favorites.b1':'Chen Nianxi et al. — Breathe in Spring',
+      'favorites.b2':'Wang Shimu — Behind the Product',
+      'favorites.b3':'S. A. Alexievich — Secondhand Time',
+      'open':'Open'
     }
   };
 
   const quoteSets = {
     zh: [
-      '“一路向前，带着好奇心与温柔。”',
-      '“面朝大海，春暖花开。”',
-      '“用心感受光影，也热爱代码。”'
+      '“我们把日子过成诗，不是因为拥有了多少，而是因为看见了更多。”',
+      '“用心感受光影，也热爱代码。”',
+      '“把好工具握在手里，也把反馈写进生活。”'
     ],
     en: [
-      '“Keep moving with curiosity and kindness.”',
-      '“Facing the Sea, with Spring Blossoms.”',
-      '“Feel the light, and love the code.”'
+      '“Turn days into poetry—not because we have more, but because we see more.”',
+      '“Feel the light, and love the code.”',
+      '“Hold good tools in your hands, and write feedback into life.”'
     ]
   };
 
@@ -169,16 +259,29 @@
 
   // Photo data (files next to scripts.css under imgBase)
   const photos = [
-    {src: imgBase + 'morning_city.jpg',cap:{zh:'晨光 · 城市',en:'Morning · City'},cat:'city'},
-    {src: imgBase + 'coffee.jpg',cap:{zh:'咖啡',en:'Coffee'},cat:'street'},
-    {src: imgBase + 'flower.jpg',cap:{zh:'花',en:'Flower'},cat:'fav'},
-    {src: imgBase + 'leaves.jpg',cap:{zh:'落叶',en:'Leaves'},cat:'street'},
-    {src: imgBase + 'love.jpg',cap:{zh:'最爱',en:'Favorite'},cat:'fav'},
-    {src: imgBase + 'tea.jpg',cap:{zh:'热茶',en:'Tea'},cat:'street'},
-    {src: imgBase + 'tower.jpg',cap:{zh:'塔影',en:'Tower'},cat:'city'},
-    {src: imgBase + 'tree.jpg',cap:{zh:'树',en:'Tree'},cat:'street'},
-    {src: imgBase + 'zoo.jpg',cap:{zh:'动物园',en:'Zoo'},cat:'fav'},
-    {src: imgBase + 'bird.jpg',cap:{zh:'鸟',en:'Bird'},cat:'fav'}
+    // City
+    {src: imgBase + 'morning_city.jpg', cap:{zh:'晨光 · 城市',en:'Morning · City'}, cat:'city', alt:{zh:'晨光下的城市',en:'City in morning light'}},
+    {src: imgBase + 'tower.jpg', cap:{zh:'塔影',en:'Tower'}, cat:'city', alt:{zh:'塔影与光影',en:'Tower shadow & light'}},
+
+    // Street / everyday
+    {src: imgBase + 'coffee.jpg', cap:{zh:'咖啡',en:'Coffee'}, cat:'street', alt:{zh:'咖啡与街头氛围',en:'Coffee & street mood'}},
+    {src: imgBase + 'tea.jpg', cap:{zh:'热茶',en:'Tea'}, cat:'street', alt:{zh:'热茶的温度',en:'Warm tea'}},
+    {src: imgBase + 'leaves.jpg', cap:{zh:'落叶',en:'Leaves'}, cat:'street', alt:{zh:'落叶纹理',en:'Leaf textures'}},
+    {src: imgBase + 'tree.jpg', cap:{zh:'树',en:'Tree'}, cat:'street', alt:{zh:'树的轮廓',en:'Tree silhouette'}},
+    {src: imgBase + 'love.jpg', cap:{zh:'日常 · 热爱',en:'Everyday · Love'}, cat:'street', alt:{zh:'日常与热爱',en:'Everyday love'}},
+
+    // Nature
+    {src: imgBase + 'flower.jpg', cap:{zh:'花',en:'Flower'}, cat:'nature', alt:{zh:'花的细节',en:'Flower detail'}},
+
+    // Animals
+    {src: imgBase + 'bird.jpg', cap:{zh:'鸟',en:'Bird'}, cat:'animal', alt:{zh:'鸟的瞬间',en:'A moment with a bird'}},
+    {src: imgBase + 'zoo.jpg', cap:{zh:'动物园',en:'Zoo'}, cat:'animal', alt:{zh:'动物园的景象',en:'Zoo scene'}},
+
+    // Hashed works (personal photos with non-descriptive filenames)
+    {src: imgBase + '2ffdf51ce0848ad06aafa8e4d3cc00dd.jpg', cap:{zh:'个人作品集 · 01',en:'Portfolio · 01'}, cat:'street', alt:{zh:'个人摄影作品 01',en:'Personal photo 01'}},
+    {src: imgBase + '4559eb00e55189da04744400dae36715.jpg', cap:{zh:'个人作品集 · 02',en:'Portfolio · 02'}, cat:'street', alt:{zh:'个人摄影作品 02',en:'Personal photo 02'}},
+    {src: imgBase + '7e8de5665d156f37a223198a045fc269.jpg', cap:{zh:'个人作品集 · 03',en:'Portfolio · 03'}, cat:'street', alt:{zh:'个人摄影作品 03',en:'Personal photo 03'}},
+    {src: imgBase + 'b69c0c77057f3ff7ecdcf28141d2e40f.jpg', cap:{zh:'个人作品集 · 04',en:'Portfolio · 04'}, cat:'street', alt:{zh:'个人摄影作品 04',en:'Personal photo 04'}}
   ];
 
   const pageSize = 8;
@@ -196,7 +299,7 @@
     const start = (currentPage-1)*pageSize;
     const pageItems = data.slice(start, start+pageSize);
     photoGrid.innerHTML = pageItems.map(p=>
-      `<figure class="photo-item"><a href="${p.src}" target="_blank" rel="noopener"><img src="${p.src}" alt="photo"></a><figcaption>${(p.cap[lang]||p.cap.zh)}</figcaption></figure>`
+      `<figure class="photo-item"><a href="${p.src}" target="_blank" rel="noopener"><img src="${p.src}" alt="${(p.alt && (p.alt[lang] || p.alt.zh)) || 'photo'}"></a><figcaption>${(p.cap[lang]||p.cap.zh)}</figcaption></figure>`
     ).join('');
     pageInfo.textContent = `${currentPage} / ${total}`;
     prevPageBtn.disabled = currentPage<=1;
