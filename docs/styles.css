@@ -49,11 +49,12 @@ body{
 .btn.small{padding:6px 10px;font-size:12px;border-radius:999px;margin-right:0}
 
 .card-section{padding:24px 0}
-.card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 6px 24px rgba(16,24,40,0.06);backdrop-filter: blur(8px)}
+.card{background:var(--card);border-radius:14px;padding:20px;box-shadow:0 6px 24px rgba(16,24,40,0.06);border:1px solid rgba(10,10,10,0.04);backdrop-filter: blur(8px)}
 .grid-2{display:grid;grid-template-columns:1fr 320px;gap:20px}
 .muted{color:var(--muted)}
 .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:12px}
-.photo-item{border-radius:10px;overflow:hidden;background:#eee}
+.photo-item{border-radius:10px;overflow:hidden;background:#eee;transition:transform .18s ease, box-shadow .18s ease}
+.photo-item:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(16,24,40,0.12)}
 .photo-item img{width:100%;height:160px;object-fit:cover;display:block}
 .photo-item figcaption{padding:8px;font-size:13px;color:var(--muted)}
 .photo-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:8px;margin-bottom:8px}
@@ -67,6 +68,25 @@ body{
 .favorites-list li .title{flex:1;min-width:0}
 .site-footer{padding:28px 0;color:var(--muted)}
 
+/* PetLink film strip slider + project layout */
+.project-grid{display:grid;grid-template-columns:1fr 360px;gap:20px;align-items:start}
+.bullets{margin:10px 0 18px;padding-left:18px}
+.bullets li{margin:7px 0}
+.film-wrap{border-radius:14px;padding:14px;background:rgba(255,255,255,0.22);border:1px solid rgba(10,10,10,0.05);backdrop-filter: blur(8px)}
+.film-header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:10px}
+.film-title{margin:0;font-size:14px;font-weight:700;color:var(--muted)}
+.film-buttons{display:flex;gap:8px}
+.film-btn{border:1px solid rgba(10,10,10,0.08)}
+.film-scroller{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+.film-scroller::-webkit-scrollbar{height:8px}
+.film-scroller::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.16);border-radius:999px}
+.film-scroller::-webkit-scrollbar-track{background:transparent}
+.film-slide{position:relative;flex:0 0 240px;scroll-snap-align:start;border-radius:14px;overflow:hidden;background:#eee;box-shadow:0 6px 24px rgba(16,24,40,0.08);transition:transform .18s ease}
+.film-slide a{display:block}
+.film-slide img{width:100%;height:170px;object-fit:cover;display:block}
+.film-slide:hover{transform:translateY(-2px)}
+.film-empty{margin:10px 0 0;font-size:13px}
+
 /* Lightbox */
 .lightbox{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(2,6,23,0.6);opacity:0;pointer-events:none;transition:opacity .22s}
 .lightbox.show{opacity:1;pointer-events:auto}
@@ -77,6 +97,7 @@ body{
 /* responsive */
 @media (max-width:760px){
   .grid-2{grid-template-columns:1fr}
+  .project-grid{grid-template-columns:1fr}
   .hero-inner{flex-direction:row}
   .avatar{width:72px;height:72px;border-radius:12px}
   .photo-controls{flex-direction:column;align-items:flex-start}
