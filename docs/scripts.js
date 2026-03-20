@@ -82,6 +82,7 @@
       'favorites.b1':'陈年喜等 — 《大口呼吸春天》',
       'favorites.b2':'王诗沐 — 《幕后产品》',
       'favorites.b3':'S.A.阿列克谢耶维奇 — 《二手时间》',
+      'favorites.b4':'《纳瓦尔宝典》',
       'open':'打开'
     },
     en: {
@@ -146,6 +147,7 @@
       'favorites.b1':'Chen Nianxi et al. — Breathe in Spring',
       'favorites.b2':'Wang Shimu — Behind the Product',
       'favorites.b3':'S. A. Alexievich — Secondhand Time',
+      'favorites.b4':'《纳瓦尔宝典》',
       'open':'Open'
     }
   };
@@ -345,7 +347,14 @@
   // NOTE: GitHub Pages can’t list folder contents.
   // After you add your real PetLink images, tell me the filenames in `docs/petlink_photo/`,
   // and I’ll update this array accordingly.
-  const petlinkPhotos = [];
+  const petlinkPhotos = [
+    {src:'petlink_photo/1ff2e327028e5da733e6385a77d4a9d1.png', cap:{zh:'PetLink 01',en:'PetLink 01'}},
+    {src:'petlink_photo/3fff2a8d8c5552c6c1a8766a97a80bfc.png', cap:{zh:'PetLink 02',en:'PetLink 02'}},
+    {src:'petlink_photo/6f1dfe583d2726987fbc1f1af3bd32a5.png', cap:{zh:'PetLink 03',en:'PetLink 03'}},
+    {src:'petlink_photo/9add52b8e9a6063d6e2251a08089ff0b.png', cap:{zh:'PetLink 04',en:'PetLink 04'}},
+    {src:'petlink_photo/124ba8d713ad0b60f3facb7f6fceeb49.png', cap:{zh:'PetLink 05',en:'PetLink 05'}},
+    {src:'petlink_photo/a57eec4afc40cb224764d44be50be0e1.png', cap:{zh:'PetLink 06',en:'PetLink 06'}}
+  ];
 
   function renderPetlinkFilm(){
     if(!petlinkScroller) return;
