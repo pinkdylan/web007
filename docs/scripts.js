@@ -22,11 +22,11 @@
   const dict = {
     zh: {
       'nav.about':'关于','nav.resume':'简历','nav.project':'项目','nav.photo':'摄影集','nav.quotes':'格言','nav.favorites':'喜欢',
-      'hero.title':'你好，我是 <span class="accent">pinkdylan</span>',
+      'hero.title':'你好，我是 <span class="accent">吴昱辰</span>（Pink Dylan）',
       'hero.lead':'热爱摄影的学生 / 全栈开发者 / 也在做产品设计与 AI 安全测试。',
       'hero.ctaResume':'查看简历','hero.ctaProject':'查看项目','hero.ctaPhotos':'摄影集',
       'about.title':'关于我',
-      'about.body':'我叫 Dylan（网名 pinkdylan）。摄影对我来说是一种“观察世界”的方式：构图、色彩、比例与耐心，让我在现场更安静、更专注。因为喜欢老单反的机械质感，我也更在意“手感”和“反馈”，这份偏好从相机延伸到代码与产品里。<br><br>我是“观察者”，也是“造物主”：把想法变成可触摸的体验。学习上我会对 AI 与工程保持敏感，也会在产品视角里追问：用户到底需要什么、怎样的交互更能被信任与使用。<br><br>生活里我喜欢夜晚操场的奔跑、喜欢寝室拉上床帘的放松、喜欢和喜欢的人一起旅行——把日子过成诗，不是因为拥有了多少，而是因为看见了更多。',
+      'about.body':'我叫 吴昱辰（英文名 Pink Dylan）。摄影对我来说是一种“观察世界”的方式：构图、色彩、比例与耐心，让我在现场更安静、更专注。因为喜欢老单反的机械质感，我也更在意“手感”和“反馈”，这份偏好从相机延伸到代码与产品里。<br><br>我是“观察者”，也是“造物主”：把想法变成可触摸的体验。学习上我会对 AI 与工程保持敏感，也会在产品视角里追问：用户到底需要什么、怎样的交互更能被信任与使用。<br><br>生活里我喜欢夜晚操场的奔跑、喜欢寝室拉上床帘的放松、喜欢和喜欢的人一起旅行——把日子过成诗，不是因为拥有了多少，而是因为看见了更多。',
 
       'resume.title':'简历',
       'resume.intro':'把我能做什么、我在学什么、我正在把它做成什么样，整理在这里。',
@@ -82,16 +82,17 @@
       'favorites.b1':'陈年喜等 — 《大口呼吸春天》',
       'favorites.b2':'王诗沐 — 《幕后产品》',
       'favorites.b3':'S.A.阿列克谢耶维奇 — 《二手时间》',
-      'favorites.b4':'《纳瓦尔宝典》',
+      'favorites.b4':'埃里克·乔根森 - 《纳瓦尔宝典》',
+      'quotes.by':'— 吴昱辰',
       'open':'打开'
     },
     en: {
       'nav.about':'About','nav.resume':'Resume','nav.project':'Project','nav.photo':'Photo Gallery','nav.quotes':'Quotes','nav.favorites':'Favorites',
-      'hero.title':'Hi, I am <span class="accent">pinkdylan</span>',
+      'hero.title':'Hi, I am <span class="accent">Pink Dylan</span>',
       'hero.lead':'A student photographer / full-stack developer / product designer and AI security tester.',
       'hero.ctaResume':'View Resume','hero.ctaProject':'View Project','hero.ctaPhotos':'Photo Gallery',
       'about.title':'About Me',
-      'about.body':'I am Dylan (aka pinkdylan). Photography is how I observe the world—composition, color, proportion, and patience keep me calm and focused on-site. I love the mechanical feel of old cameras, so I care about “hand feel” and feedback; it shows up in my code and product thinking too.<br><br>I am both an “observer” and a “maker”: turning ideas into tangible experiences. I stay curious about AI and engineering, and I keep asking from a product lens—what do users really need, and what kind of interaction builds trust?<br><br>In life I enjoy running on night tracks, pulling the curtains for quiet downtime, and traveling with someone I love—turning days into poetry, not because we have more, but because we see more.',
+      'about.body':'I am Pink Dylan. Photography is how I observe the world—composition, color, proportion, and patience keep me calm and focused on-site. I love the mechanical feel of old cameras, so I care about “hand feel” and feedback; it shows up in my code and product thinking too.<br><br>I am both an “observer” and a “maker”: turning ideas into tangible experiences. I stay curious about AI and engineering, and I keep asking from a product lens—what do users really need, and what kind of interaction builds trust?<br><br>In life I enjoy running on night tracks, pulling the curtains for quiet downtime, and traveling with someone I love—turning days into poetry, not because we have more, but because we see more.',
 
       'resume.title':'Resume',
       'resume.intro':'What I can do, what I am learning, and what I am shaping right now.',
@@ -147,7 +148,8 @@
       'favorites.b1':'Chen Nianxi et al. — Breathe in Spring',
       'favorites.b2':'Wang Shimu — Behind the Product',
       'favorites.b3':'S. A. Alexievich — Secondhand Time',
-      'favorites.b4':'《纳瓦尔宝典》',
+      'favorites.b4':'埃里克·乔根森 - 《纳瓦尔宝典》',
+      'quotes.by':'— Pink Dylan',
       'open':'Open'
     }
   };
@@ -348,12 +350,12 @@
   // After you add your real PetLink images, tell me the filenames in `docs/petlink_photo/`,
   // and I’ll update this array accordingly.
   const petlinkPhotos = [
-    {src:'petlink_photo/1ff2e327028e5da733e6385a77d4a9d1.png', cap:{zh:'PetLink 01',en:'PetLink 01'}},
-    {src:'petlink_photo/3fff2a8d8c5552c6c1a8766a97a80bfc.png', cap:{zh:'PetLink 02',en:'PetLink 02'}},
-    {src:'petlink_photo/6f1dfe583d2726987fbc1f1af3bd32a5.png', cap:{zh:'PetLink 03',en:'PetLink 03'}},
-    {src:'petlink_photo/9add52b8e9a6063d6e2251a08089ff0b.png', cap:{zh:'PetLink 04',en:'PetLink 04'}},
-    {src:'petlink_photo/124ba8d713ad0b60f3facb7f6fceeb49.png', cap:{zh:'PetLink 05',en:'PetLink 05'}},
-    {src:'petlink_photo/a57eec4afc40cb224764d44be50be0e1.png', cap:{zh:'PetLink 06',en:'PetLink 06'}}
+    {src:'petlink_photo/1.png', alt:{zh:'PetLink 01',en:'PetLink 01'}},
+    {src:'petlink_photo/2.png', alt:{zh:'PetLink 02',en:'PetLink 02'}},
+    {src:'petlink_photo/3.png', alt:{zh:'PetLink 03',en:'PetLink 03'}},
+    {src:'petlink_photo/4.png', alt:{zh:'PetLink 04',en:'PetLink 04'}},
+    {src:'petlink_photo/5.png', alt:{zh:'PetLink 05',en:'PetLink 05'}},
+    {src:'petlink_photo/6.png', alt:{zh:'PetLink 06',en:'PetLink 06'}}
   ];
 
   function renderPetlinkFilm(){
@@ -371,8 +373,9 @@
     if(petlinkPrevBtn) petlinkPrevBtn.style.display = '';
     if(petlinkNextBtn) petlinkNextBtn.style.display = '';
 
+    const lang = localStorage.getItem('pd-lang')||'zh';
     petlinkScroller.innerHTML = petlinkPhotos.map((p, i) => {
-      const alt = p.alt || p.cap || `PetLink ${i + 1}`;
+      const alt = (p.alt && (p.alt[lang] || p.alt.zh)) || `PetLink ${i + 1}`;
       return `
         <figure class="film-slide" data-slide="${i}">
           <a href="${p.src}" target="_blank" rel="noopener">
